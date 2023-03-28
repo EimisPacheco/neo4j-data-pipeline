@@ -1,4 +1,4 @@
-# Creating a Data Pipeline with Neo4j Ghap, Python, Airflow, and XML File Ingestion 
+# Creating a Data Pipeline with Neo4j Graph DB, Python, Airflow, and XML File Ingestion 
 by Eimis Pacheco
 
 ## Introduction
