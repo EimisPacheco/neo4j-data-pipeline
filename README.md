@@ -38,7 +38,7 @@ neo4j: To interact with Neo4j database using Python.
 pip install xmltodict neo4j
 
 
-## Step 3: Configuring Neo4j Desktop
+### Step 3: Configuring Neo4j Desktop
 We need to create a new database in Neo4j Desktop for our pipeline. Follow these steps:
 Open Neo4j Desktop.
 Click on the “Create a New Project” button.
@@ -51,7 +51,7 @@ Install APOC library to be able to interact with DB using cypher queries.
 ![APOC](./img/APOC.png)
 
 
-## Step 4: Writing the Python Code
+### Step 4: Writing the Python Code
 We will now write the Python code for our pipeline. Our pipeline will consist of the following steps:
 Read the XML file and convert it to a Python dictionary for easy manage.
 Extract the necessary data from the dictionary.
@@ -59,17 +59,17 @@ Create nodes in the Neo4j database for each proteins node and related ones.
 Create relationships between the proteins node and related ones.
 
 
-## Step 5: Airflow Settings
+### Step 5: Airflow Settings
 Put the uniprot_dag.py file in the dag folder of the airflow folder, in my case, this folder was not created so I created it myself.
 Go to airflow.cfg file and modify the dags_folder parameter "dags_folder = /Users/eimispacheco/airflow/dags"
 Change this min_file_process_interval parameter to 5 to make your dag changes much faster
 Create a appSettingPath variable in Admin Menu which is a variable that will point to the location of your configuration file (I try to show the least data possible in code, including paths)
 
 
-## Step 6: Change the variable in the configuration file (dwh.cfg) accordingly.
+### Step 6: Change the variable in the configuration file (dwh.cfg) accordingly.
 
 
-## Step 7: Enjoy the results and improve (Everything is improveable for sure)
+### Step 7: Enjoy the results and improve (Everything is improveable for sure)
 
 
 ## Possible Improvements:
@@ -79,7 +79,7 @@ Create a appSettingPath variable in Admin Menu which is a variable that will poi
 5. Usage of data compresion.
 
 
-**Result**
+## Result
 
 All Nodes
 ![Protein Nodes](./img/Protein_nodes_all.png)
